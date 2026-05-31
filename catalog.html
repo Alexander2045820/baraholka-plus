@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров — Барахолка Плюс</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Барахолка Плюс</div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Как это работает</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <input type="text" placeholder="Поиск..." class="search">
+                <a href="#" class="icon">👤</a>
+                <a href="cart.html" class="icon">🛒<span class="cart-count">3</span></a>
+                <a href="#" class="icon">❤️</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <h1>Каталог товаров</h1>
+        
+        <div class="catalog-layout">
+            <!-- Фильтры -->
+            <aside class="filters">
+                <h3>Фильтры</h3>
+                
+                <div class="filter-group">
+                    <h4>Категория</h4>
+                    <label><input type="checkbox"> Электроника</label>
+                    <label><input type="checkbox"> Одежда и обувь</label>
+                    <label><input type="checkbox"> Мебель</label>
+                    <label><input type="checkbox"> Детские товары</label>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Состояние</h4>
+                    <label><input type="checkbox"> Новое</label>
+            <label><input type="checkbox"> Б/у — отличное</label>
+            <label><input type="checkbox"> Б/у — хорошее</label>
+            <label><input type="checkbox"> Б/у — удовлетворительное</label>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Цена</h4>
+            <input type="range" min="0" max="100000" value="50000">
+            <div class="price-range">
+                <span>0 ₽</span>
+                <span>100 000 ₽</span>
+            </div>
+                </div>
+            </aside>
+
+            <!-- Список товаров -->
+            <section class="products">
+                <div class="sorting">
+                    <select>
+                        <option>По популярности</option>
+                        <option>По цене (дешёвые)</option>
+                        <option>По цене (дорогие)</option>
+                        <option>По новизне</option>
+                    </select>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Товар 1 -->
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Смартфон">
+                        <h3>Смартфон Samsung Galaxy S21</h3>
+                        <p class="product-state">Б/у — отличное</p>
+                        <p class="product-price">25 000 ₽</p>
+                        <p class="product-location">Москва</p>
+                        <div class="rating">★★★★★</div>
+                        <button class="btn">В корзину</button>
+                    </div>
