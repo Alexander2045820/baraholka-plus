@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — Барахолка Плюс</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Барахолка Плюс</div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Как это работает</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <input type="text" placeholder="Поиск..." class="search">
+                <a href="#" class="icon">👤</a>
+                <a href="cart.html" class="icon">🛒<span class="cart-count">3</span></a>
+                <a href="#" class="icon">❤️</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Личный кабинет -->
+    <main class="container profile-page">
+        <h1>Личный кабинет</h1>
+
+        <div class="profile-layout">
+            <!-- Боковое меню -->
+            <aside class="profile-sidebar">
+                <nav>
+                    <a href="#orders" class="active">Мои заказы</a>
+                    <a href="#favorites">Избранные товары</a>
+                    <a href="#listings">Мои объявления</a>
+                    <a href="#settings">Настройки профиля</a>
+                    <a href="#payments">Баланс и платежи</a>
+                </nav>
+            </aside>
+
+            <!-- Основной контент -->
+            <section class="profile-content">
+                <!-- Заказы -->
+                <div id="orders" class="profile-section">
+                    <h2>Мои заказы</h2>
+                    <div class="order-list">
+                        <!-- Заказ 1 -->
+                        <div class="order-card">
+                            <div class="order-header">
+                                <span>Заказ №12345</span>
+                                <span class="order-status">Доставлен</span>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">
+                    <img src="https://via.placeholder.com/50x50" alt="Смартфон">
+                    <span>Смартфон Samsung Galaxy S21</span>
+            <span>25 000 ₽</span>
+        </div>
+    </div>
+    <div class="order-footer">
+        <span>Итого: 25 000 ₽</span>
+        <button class="btn">Повторить заказ</button>
+    </div>
+</div>
+
+<!-- Заказ 2 -->
+<div class="order-card">
+    <div class="order-header">
+        <span>Заказ №12344</span>
+        <span class="order-status">Отправлен</span>
+    </div>
+    <div class="order-items">
+        <div class="order-item">
+            <img src="https://via.placeholder.com/50x50" alt="Диван">
+            <span>Диван угловой, коричневый</span>
+            <span>45 000 ₽</span>
+        </div>
+    </div>
+    <div class="order-footer">
+        <span>Итого: 45 000 ₽</span>
+        <button class="btn">Отследить доставку</button>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Избранные товары -->
+<div id="favorites" class="profile-section" style="display: none;">
+    <h2>Избранные товары</h2>
+    <div class="favorite-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150x150" alt="Ноутбук">
+            <h3>Ноутбук Lenovo IdeaPad</h3>
+            <p class="product-price">35 000 ₽</p>
+            <button class="btn">В корзину</button>
+            <button class="remove-btn">✕</button>
+        </div>
+    </div>
+</div>
+
+<!-- Мои объявления -->
+<div id="listings" class="profile-section" style="display: none;">
+    <h2>Мои объявления</h2>
+    <div class="listing-list">
+        <div class="listing-card">
+            <img src="https://via.placeholder.com/100x100" alt="Книга">
+            <div class="listing-info">
+                <h3>Книга «Веб‑разработка для начинающих»</h3>
+                <p class="listing-status">Активно</p>
+                <p class="product-price">1 500 ₽</p>
+            </div>
+            <div class="listing-actions">
+                <button class="btn-small">Редактировать</button>
+                <button class="btn-small btn-danger">Снять с публикации</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Настройки профиля -->
+<div id="settings" class="profile-section" style="display: none;">
+    <h2>Настройки профиля</h2>
+    <form class="profile-form">
+        <div class="form-group">
+            <label>Имя:</label>
+            <input type="text" value="Иван Петров">
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" value="ivan@example.com">
+        </div>
+        <div class="form-group">
+            <label>Телефон:</label>
+            <input type="tel" value="+7 (999) 123-45-67">
+        </div>
+        <div class="form-group">
+            <label>Город:</label>
+            <input type="text" value="Москва">
+        </div>
+        <button type="submit" class="btn">Сохранить изменения</button>
+    </form>
+</div>
+</section>
+</div>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Барахолка Плюс. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
