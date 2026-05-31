@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Барахолка Плюс</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Барахолка Плюс</div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Как это работает</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <input type="text" placeholder="Поиск..." class="search">
+                <a href="#" class="icon">👤</a>
+                <a href="cart.html" class="icon">🛒<span class="cart-count">3</span></a>
+                <a href="#" class="icon">❤️</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Корзина -->
+    <main class="container cart-page">
+        <h1>Корзина покупок</h1>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Товар</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                    <th>Сумма</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Товар 1 -->
+                <tr>
+                    <td>
+                        <div class="cart-item">
+                            <img src="https://via.placeholder.com/80x80" alt="Смартфон">
+                            <div>
+                                <h3>Смартфон Samsung Galaxy S21</h3>
+                                <p>Б/у — отличное</p>
+                            </div>
+                </div>
+            </td>
+            <td>25 000 ₽</td>
+            <td>
+                <div class="quantity-selector">
+                    <button class="qty-btn">-</button>
+                    <span>1</span>
+                    <button class="qty-btn">+</button>
+                </div>
+            </td>
+            <td>25 000 ₽</td>
+            <td><button class="remove-btn">✕</button></td>
+        </tr>
+
+        <!-- Товар 2 -->
+        <tr>
+            <td>
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/80x80" alt="Диван">
+            <div>
+                <h3>Диван угловой, коричневый</h3>
+                <p>Новое</p>
+            </div>
+        </div>
+    </td>
+    <td>45 000 ₽</td>
+    <td>
+        <div class="quantity-selector">
+            <button class="qty-btn">-</button>
+            <span>1</span>
+            <button class="qty-btn">+</button>
+        </div>
+    </td>
+    <td>45 000 ₽</td>
+    <td><button class="remove-btn">✕</button></td>
+</
+              </tr>
+        </tbody>
+    </table>
+
+
+    <div class="cart-summary">
+        <div class="promo-code">
+            <input type="text" placeholder="Промокод">
+            <button class="btn">Применить</button>
+        </div>
+        <div class="total">
+            <h3>Итого:</h3>
+            <p>70 000 ₽</p>
+        </div>
+        <a href="checkout.html" class="btn btn-large">Оформить заказ</a>
+    </div>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Барахолка Плюс. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
