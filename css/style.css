@@ -136,3 +136,27 @@ body {
     padding: 20px 0;
     border-top: 1px solid #eee;
 }
+
+/* Стили для корзины */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-item img {
+    width: 80px;
+    height:
